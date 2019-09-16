@@ -1,0 +1,15 @@
+type City {
+    id: String,
+    advertisement: String,
+    category: String,
+    code: String,
+    description: String,
+    name: String,
+    imagesSmall: [String],
+    imagesBig: [String],
+}
+
+type Query {
+    cities: [City]
+    city(id: ID!): City
+}
